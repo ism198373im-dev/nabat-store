@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة نبات - لإنتاج الزيوت والطحينة الفاخرة</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf8f5;
+            color: #333;
+        }
+        
+        .top-bar {
+            background-color: #cda250;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        header {
+            background-color: #2e4a28;
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+            border-bottom: 4px solid #cda250;
+        }
+        
+        /* تنسيق صندوق الشعار العصري الجديد */
+        .brand-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* ستايل اللوجو المودرن الهندسي */
+        .modern-logo {
+            width: 80px;
+            height: 80px;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+        }
+
+        header h1 { 
+            margin: 0; 
+            font-size: 3.2rem; 
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+        header p { margin: 8px 0 0 0; font-size: 1.25rem; color: #e0eedc; font-weight: 300; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+        .about-section {
+            text-align: center;
+            margin: 40px 0;
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            border: 1px solid #f1eae1;
+        }
+        .about-section h2 { color: #2e4a28; font-size: 2.2rem; margin-bottom: 15px; }
+        .about-section p { font-size: 1.15rem; color: #555; line-height: 1.9; max-width: 900px; margin: 0 auto; }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 35px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+            border: 1px solid #eae1d4;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            background-color: #f0ede6;
+        }
+
+        .product-info { padding: 22px; }
+        .product-info h3 { margin: 0 0 12px 0; color: #2e4a28; font-size: 1.45rem; font-weight: 700; }
+        .product-info p { margin: 0; color: #666; font-size: 0.95rem; line-height: 1.6; }
+
+        .bottom-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            background: #f0ede6;
+            padding: 45px;
+            border-radius: 16px;
+        }
+        .cta-buttons { display: flex; flex-direction: column; justify-content: center; gap: 15px; }
+        .btn {
+            background-color: white;
+            color: #2e4a28;
+            border: 2px solid #2e4a28;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        .btn:hover { background-color: #f7f5f0; }
+        .btn.primary { background-color: #2e4a28; color: white; border: none; }
+        .btn.primary:hover { background-color: #243b20; }
+
+        .quote-form h3 { color: #2e4a28; margin-top: 0; font-size: 1.4rem; }
+        .form-group { margin-bottom: 15px; }
+        .form-group input {
+            width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 1rem;
+        }
+        .form-group input:focus { border-color: #cda250; outline: none; }
+        
+        footer {
+            background-color: #1f331a; color: #a3b89e; text-align: center; padding: 25px; margin-top: 60px; border-top: 4px solid #cda250; font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        شركة نبات - حاصلات زراعية وإنتاج فائق الجودة للتجارة المحلية والدولية
+    </div>
+
+    <header>
+        <div class="brand-container">
+            <svg class="modern-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100" height="100" rx="24" fill="#1f331a" stroke="#cda250" stroke-width="2"/>
+                <path d="M30 35 C30 65, 70 65, 70 35" stroke="url(#modernGold)" stroke-width="8" stroke-linecap="round"/>
+                <path d="M50 32 C50 32, 58 44, 58 49 C58 53.4, 54.4 57, 50 57 C45.6 57, 42 53.4, 42 49 C42 44, 50 32, 50 32 Z" fill="url(#modernGold)"/>
+                <defs>
+                    <linearGradient id="modernGold" x1="30" y1="35" x2="70" y2="57" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fae0ad"/>
+                        <stop offset="0.5" stop-color="#cda250"/>
+                        <stop offset="1" stop-color="#9a722c"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <h1>شـركـة نـبـات</h1>
+        </div>
+        <p>عصر فائق الجودة لزيوت وطحينة وزبدة المكسرات الطبيعية 100%</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="about-section">
+            <h2>عن مصنعنا المتطور</h2>
+            <p>نعتمد في شركة نبات على أحدث تقنيات العصر الحديث والآلات الميكانيكية المبتكرة لنقدم لعملائنا في السوق المحلي والتشغيل الدولي منتجات زراعية مصنعة بأعلى معايير الجودة والنقاء وضمان استخلاص الزيوت بطرق صحية وطبيعية تماماً.</p>
+        </section>
+
+        <h2 style="text-align: center; color: #2e4a28; font-size: 2rem; margin-top: 40px; font-weight: 700;">منتجاتنا الفاخرة</h2>
+        
+        <section class="products-grid">
+            
+            <div class="product-card">
+                <img src="olive.jpg.png" alt="زيت زيتون بكر ممتاز" class="product-image">
+                <div class="product-info">
+                    <h3>زيت زيتون بكر ممتاز</h3>
+                    <p>نقي وطبيعي 100%، مستخلص من أجود ثمار الزيتون على البارد للحفاظ على كامل فوائده ومذاقه الغني.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="sesame.jpg.png" alt="زيت السمسم النقي" class="product-image">
+                <div class="product-info">
+                    <h3>زيت السمسم النقي</h3>
+                    <p>مستخلص بعناية فائقة، يتميز برائحة ونكهة أصلية ونقاء تام يناسب كافة الاستخدامات الغذائية والصحية.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="tahini.jpg.png" alt="طحينة السمسم الفاخرة" class="product-image">
+                <div class="product-info">
+                    <h3>طحينة السمسم الفاخرة</h3>
+                    <p>قوام مثالي ناعم وطعم رائع مجهز من بذور السمسم المحمصة بدقة دون أي إضافات صناعية أو زيوت مهدرجة.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="peanut.jpg.png" alt="زبدة الفول السوداني" class="product-image">
+                <div class="product-info">
+                    <h3>زبدة الفول السوداني</h3>
+                    <p>طاقة ولذة في منتج واحد، غنية بالبروتين ومصنوعة من الفول السوداني الطبيعي لتعطيك طعماً غنياً وقواماً مميزاً.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="bottom-section">
+            <div class="cta-buttons">
+                <h3 style="color: #2e4a28; margin: 0 0 10px 0; font-weight: 700;">خدماتنا وطلباتكم</h3>
+                <button class="btn primary" onclick="alert('سيتم تجهيز حقيبة العينات وإرسالها لكم قريباً!')">طلب عينات مجانية للشركات</button>
+                <button class="btn" onclick="alert('رقم خدمة العملاء والمبيعات للجملة: 01xxxxxxxxx')">طلب عرض أسعار للجملة</button>
+            </div>
+
+            <div class="quote-form">
+                <h3>اتصل بنا أو اطلب اقتباس سعر</h3>
+                <form onsubmit="alert('تم استلام طلبكم بنجاح في شركة نبات.'); return false;">
+                    <div class="form-group"><input type="text" placeholder="الاسم الكريم / اسم المؤسسة" required></div>
+                    <div class="form-group"><input type="tel" placeholder="رقم الهاتف (واتساب)" required></div>
+                    <button type="submit" class="btn primary" style="width: 100%;">اتصل بنا الآن</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | شركة نبات للحاصلات والإنتاج الزراعي</p>
+    </footer>
+
+</body>
+</html>
